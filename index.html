@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TS ISLAM Construction</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    background:#0d0d0d;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* NAV */
+nav{
+    background:#f7c600;
+    padding:12px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    margin:12px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+    height:420px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:36px;
+    font-weight:bold;
+    text-shadow:2px 2px 10px black;
+    text-align:center;
+}
+
+/* SECTION */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* CARDS */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:280px;
+    margin:15px;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    transition:0.3s;
+    background:white;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* PROJECT IMAGE */
+.img{
+    height:160px;
+    background:#ddd;
+    margin-bottom:10px;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact{
+    background:#f1f1f1;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#0d0d0d;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>TS ISLAM Construction</h1>
+    <p>Road | Bridge | Government Building Contractor</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    Building Roads, Bridges & Strong Future
+</div>
+
+<!-- SERVICES -->
+<div class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Road Construction</h3>
+            <p>High quality durable road building service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Bridge Construction</h3>
+            <p>Safe, modern and strong bridge engineering.</p>
+        </div>
+
+        <div class="card">
+            <h3>Government Projects</h3>
+            <p>All types of public infrastructure work.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
+    <h2>Our Projects</h2>
+    <div class="grid">
+
+        <div class="card">
+            <div class="img"></div>
+            <h3>Dhaka Road Project</h3>
+        </div>
+
+        <div class="card">
+            <div class="img"></div>
+            <h3>Mymensingh Bridge</h3>
+        </div>
+
+        <div class="card">
+            <div class="img"></div>
+            <h3>Govt Building Work</h3>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 018899226783</p>
+    <p>📍 Dhaka & Mymensingh</p>
+
+    <a class="btn" href="https://wa.me/88018899226783" target="_blank">
+        💬 Chat on WhatsApp
+    </a>
+</div>
+
+<footer>
+    <p>© 2026 TS ISLAM Construction | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
