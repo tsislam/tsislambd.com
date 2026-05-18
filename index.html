@@ -3,118 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TS ISLAM Construction</title>
+
+<title>TS Islam Construction</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    font-family:Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* HEADER */
-header{
-    background:#0d0d0d;
-    color:white;
-    padding:20px;
-    text-align:center;
+body {
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* NAV */
-nav{
-    background:#f7c600;
-    padding:12px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+/* Header */
+header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-nav a{
-    margin:12px;
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
+header h1 {
+    font-size: 36px;
 }
 
-/* HERO */
-.hero{
-    background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
-    height:420px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:36px;
-    font-weight:bold;
-    text-shadow:2px 2px 10px black;
-    text-align:center;
+/* Navbar */
+nav {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
 }
 
-/* SECTION */
-.section{
-    padding:60px 20px;
-    text-align:center;
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-h2{
-    margin-bottom:20px;
+nav a:hover {
+    color: #00c6ff;
 }
 
-/* CARDS */
-.grid{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
+/* Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.card{
-    width:280px;
-    margin:15px;
-    padding:20px;
-    border-radius:12px;
-    border:1px solid #ddd;
-    transition:0.3s;
-    background:white;
+.container {
+    max-width: 1100px;
+    margin: auto;
 }
 
-.card:hover{
-    transform:scale(1.05);
-    box-shadow:0px 8px 20px rgba(0,0,0,0.2);
+/* Services */
+.services {
+    background: #f4f4f4;
 }
 
-/* PROJECT IMAGE */
-.img{
-    height:160px;
-    background:#ddd;
-    margin-bottom:10px;
-    border-radius:8px;
+.service-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* CONTACT */
-.contact{
-    background:#f1f1f1;
+.box {
+    background: white;
+    padding: 25px;
+    margin: 15px;
+    width: 260px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    transition: 0.3s;
 }
 
-/* BUTTON */
-.btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:10px 20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:25px;
-    font-weight:bold;
+.box:hover {
+    transform: translateY(-6px);
 }
 
-/* FOOTER */
-footer{
-    background:#0d0d0d;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
+/* Contact */
+.contact {
+    background: #eee;
+}
+
+.btn {
+    display: inline-block;
+    background: #00c6ff;
+    color: white;
+    padding: 12px 25px;
+    margin: 8px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.email {
+    background: #ff5722;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 </style>
 </head>
@@ -123,80 +121,54 @@ footer{
 
 <header>
     <h1>TS ISLAM Construction</h1>
-    <p>Road | Bridge | Government Building Contractor</p>
+    <p>Road • Bridge • Government • Private Projects</p>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
 </nav>
 
-<!-- HERO -->
-<div class="hero" id="home">
-    Building Roads, Bridges & Strong Future
+<section>
+<div class="container">
+    <h2>About Us</h2>
+    <p>
+        TS Islam Construction is a trusted company for road, bridge and building construction.
+        আমরা সরকারি ও বেসরকারি সকল কাজ দক্ষতার সাথে সম্পন্ন করি।
+    </p>
 </div>
+</section>
 
-<!-- SERVICES -->
-<div class="section" id="services">
+<section class="services">
+<div class="container">
     <h2>Our Services</h2>
-    <div class="grid">
 
-        <div class="card">
-            <h3>Road Construction</h3>
-            <p>High quality durable road building service.</p>
-        </div>
-
-        <div class="card">
-            <h3>Bridge Construction</h3>
-            <p>Safe, modern and strong bridge engineering.</p>
-        </div>
-
-        <div class="card">
-            <h3>Government Projects</h3>
-            <p>All types of public infrastructure work.</p>
-        </div>
-
+    <div class="service-box">
+        <div class="box"><h3>Road Construction</h3></div>
+        <div class="box"><h3>Bridge Construction</h3></div>
+        <div class="box"><h3>Government Work</h3></div>
+        <div class="box"><h3>Private Projects</h3></div>
     </div>
 </div>
+</section>
 
-<!-- PROJECTS -->
-<div class="section" id="projects">
-    <h2>Our Projects</h2>
-    <div class="grid">
-
-        <div class="card">
-            <div class="img"></div>
-            <h3>Dhaka Road Project</h3>
-        </div>
-
-        <div class="card">
-            <div class="img"></div>
-            <h3>Mymensingh Bridge</h3>
-        </div>
-
-        <div class="card">
-            <div class="img"></div>
-            <h3>Govt Building Work</h3>
-        </div>
-
-    </div>
-</div>
-
-<!-- CONTACT -->
-<div class="section contact" id="contact">
+<section class="contact">
+<div class="container">
     <h2>Contact Us</h2>
-    <p>📞 018899226783</p>
-    <p>📍 Dhaka & Mymensingh</p>
 
-    <a class="btn" href="https://wa.me/88018899226783" target="_blank">
-        💬 Chat on WhatsApp
-    </a>
+    <p><strong>Name:</strong> Md Torekul Islam</p>
+    <p><strong>Phone:</strong> 01889926783</p>
+    <p><strong>Email:</strong> torekuli697@gmail.com</p>
+
+    <a href="tel:01889926783" class="btn">📞 Call</a>
+    <a href="https://wa.me/8801889926783" class="btn whatsapp">💬 WhatsApp</a>
+    <a href="mailto:torekuli697@gmail.com" class="btn email">📧 Email</a>
 </div>
+</section>
 
 <footer>
-    <p>© 2026 TS ISLAM Construction | All Rights Reserved</p>
+    <p>© 2026 TS Islam Construction | All Rights Reserved</p>
 </footer>
 
 </body>
